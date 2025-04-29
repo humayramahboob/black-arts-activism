@@ -12,6 +12,33 @@ body {
     display: block;
   }
   
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: #4A1C2B;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  
+  .hero-text small {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #4A1C2B;
+  }
+
   .intro-text {
     background-color: #F5E6DA;
     color: #1B2F50;
@@ -75,3 +102,7 @@ body {
     margin: 1rem;
   }
   
+  .footer-columns a{
+    color: #C4A76B;
+    text-decoration: none;
+  }
