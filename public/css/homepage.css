@@ -39,7 +39,7 @@ body {
     color: #4A1C2B;
   }
 
-  .intro-text {
+  .intro-text,.article {
     background-color: #F5E6DA;
     color: #1B2F50;
     padding: 2rem;
@@ -106,3 +106,34 @@ body {
     color: #C4A76B;
     text-decoration: none;
   }
+
+  blockquote {
+    font-style: italic;
+    background: #e6ded4;
+    padding: 1rem;
+    border-left: 5px solid #3c2a21;
+    margin: 2rem 0;
+  }
+
+  .sources-divider {
+    width: 60px;
+    height: 2px;
+    background-color: #ccc;
+    margin: 3rem auto 1.5rem;
+    border: none;
+  }
+  
+  .sources-list {
+    list-style: none;
+    padding-left: 0;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+  }
+  
+  .sources-list li {
+    margin-bottom: 0.75rem;
+  }
+  
