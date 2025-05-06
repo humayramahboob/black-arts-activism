@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Street Art </title>
+  <link rel="stylesheet" href="/css/harlem.css">
+</head>
+<body>
+    <section class="hero">
+        <img src="/images/street-art-banner.png" alt="Colorful Black street art mural" class="hero-image">
+        <div class="hero-text">
+          <h1>Street Art & Graffiti</h1>
+          <p>Visual Resistance from the Margins</p>
+        </div>
+      </section>
+
+      <div class="content">
+
+        <p>Street art and graffiti have long been tools of rebellion, cultural expression, and public storytelling—especially for marginalized communities. Though often dismissed as vandalism, graffiti holds deep roots in social history and carries messages of resistance, pride, and community power.</p>
+      
+        <p>One of the earliest known uses of graffiti as protest dates back to the slave rebellions in Cuba between 1841 and 1844. During this time, many Africans living in the region used art on walls as a way to express their frustrations, ideas, and identities. As Hennis notes, “Graffiti was found in the 1800s, where slave rebellions took place in Cuba... used [by Africans] to express themselves.”</p>
+      
+        <p>Modern street art continues this legacy of expression, particularly within Black and Latinx communities. Scholar Illescas emphasizes that graffiti is “a multiracial and multi-ethnic subculture,” and his research shines a light on the specific artistic contributions of these groups, often overlooked in the mainstream art world.</p>
+      
+        <blockquote>
+          “The graffiti that we see up in the streets may seem like an insignificant tag or scribble to some people, but there’s a lot of meaning behind it.” — Illescas
+        </blockquote>
+      
+        <p>These markings—whether stylized names, symbols, or murals—are layered with history, identity, and political resistance. In neighborhoods often excluded from institutional art spaces, the streets become the gallery. From Cuba’s colonial walls to city alleyways today, graffiti remains a loud and necessary form of visual protest.</p>
+      
+        <figure>
+          <img src="/images/street-art.png" alt="Graffiti mural honoring Black culture">
+          <figcaption>A mural representing Black pride and resistance through graffiti.</figcaption>
+        </figure>
+      </div>
+    
+    <hr class="sources-divider">
+    <ul class="sources-list">
+        <li>
+            “Graffiti Has Been A Part Of Black Culture For Centuries.” <em>PushBlack</em>, https://www.pushblack.us/news/graffiti-has-been-part-black-culture-centuries. Accessed 5 May 2025.
+          </li>
+          <li>
+            “Graffiti and Street Art: Black and Latinx Communities.” <em>UC Santa Cruz News</em>, 20 Sept. 2021, https://news.ucsc.edu/2021/09/graffiti-street-art/#:~:text=Graffiti%20is%20a%20multiracial%20and%20multi-ethnic%20subculture. Accessed 5 May 2025.
+          </li>
+    </ul>
+<div id="footer-container"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+</body>
+</html>

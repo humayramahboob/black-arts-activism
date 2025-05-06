@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Black Arts & Activism</title>
   <link rel="stylesheet" href="/css/homepage.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -62,17 +63,19 @@
   </section>
   
 
-  <section class="slideshow-section">
-    <h2>Homepage - Slideshow</h2>
-    <div class="slideshow">
-      <button class="arrow">&#8592;</button>
-      <div class="slide">
-        <img src="/images/sample1.jpg" alt="Art">
-        <p>Art piece & Art author</p>
+  <section class="swiper-section">
+    <h2>Artwork Slideshow</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper" id="slideshow-wrapper">
+        <!-- Slides will be injected here -->
       </div>
-      <button class="arrow">&#8594;</button>
+      <!-- Add Swiper navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
+  
 
   <hr class="sources-divider">
   <ul class="sources-list">
@@ -83,22 +86,17 @@
   </ul>
 </section>
 
-  <footer>
-    <div class="footer-columns">
-      <div><h4>History</h4><p>
-        <a href="harlem.html">Harlem Renaissance</a><br>
-        <a href ="black-art-movement.html">Black Arts Movement</a><br>
-        Black Lives Matter<br>
-        </p></div>
-      <div><h4>Art Types</h4><p>...</p></div>
-      <div><h4>Influential Artists</h4><p>Assata</p></div>
-      <div><h4>Contact/Links</h4>
-        <p>humayramahboob1@gmail.com<br>
-        <a href="https://www.linkedin.com/in/humayra-mahboob-387336216/">LinkedIn</a><br>
-        <a href="https://github.com/humayramahboob/black-arts-activism">Github</a></p>
-      </div>
-    </div>
-  </footer>
+<div id="footer-container"></div>
+
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="slideshow.js" defer></script>
 
 </body>
 </html>

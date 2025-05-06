@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quilt Art</title>
+  <link rel="stylesheet" href="/css/harlem.css">
+</head>
+<body>
+
+    <section class="hero">
+        <img src="/images/quilt-art-banner.png" alt="Colorful quilt design" class="hero-image">
+        <div class="hero-text">
+          <h1>Quilt Art</h1>
+          <p>Stitching Stories of Resistance, Identity, and Empowerment</p>
+          <small>FAITH RINGGOLD</small>
+        </div>
+      </section>
+    
+      <div class="content">
+        <p>Quilt art is more than fabric and thread—it's a cultural tradition rich with storytelling, history, and resistance. Among Black women artists, quilting has evolved into a deeply personal and political practice, one that weaves together narratives of identity, struggle, and sisterhood.</p>
+    
+        <p>As art historian Maude Southwell Wahlman has written, quilts in African American communities carry meanings that stretch beyond aesthetics. According to Robinson, “Contemporary artistic quilts by Black women artists allow us an understanding of those things that are important to the artists like sisterhood, female empowerment, and Black feminine beauty.”</p>
+    
+        <p>Quilting also has a long and storied past. The earliest known quilt dates back to Egypt’s First Dynasty, around 3400 BC. But in African American history, quilts gained special significance during the era of slavery. Lore holds that quilts were used as secret codes to guide enslaved people to freedom via the Underground Railroad. Whether this is symbolic or literal, it reveals how quilts became tools of survival, hope, and resistance.</p>
+    
+        <p>Today, artists like Faith Ringgold and Bisa Butler continue this legacy, transforming textiles into vibrant works that challenge historical erasure and celebrate Black life. Their quilts are not just heirlooms—they are declarations, memories, and futures stitched into form.</p>
+      </div>
+      <hr class="sources-divider">
+      <ul class="sources-list">
+      <li>“The Quilting Tradition.” <em>Black Art in America</em>, 5 Feb. 2022, www.blackartinamerica.com/blogs/news/the-quilting-tradition. Accessed 5 May 2025.</li>
+      </ul>
+<div id="footer-container"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+</body>
+</html>
