@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry Ossawa Tanner - Black Arts & Activism</title>
+  <link rel="stylesheet" href="/css/artist.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+  <header>
+    <h1>Black Arts & Activism</h1>
+  </header>
+
+  <section class="artist" data-aos="fade-up">
+    <h1>Henry Ossawa Tanner</h1>
+    <p>
+      Henry Ossawa Tanner (1859–1937) was an acclaimed African American artist who achieved significant recognition for his evocative paintings that explored themes of spirituality, race, and the everyday experiences of Black life in America. Born in Pittsburgh, Pennsylvania, Tanner was the son of an abolitionist minister and a mother who valued education. Tanner initially pursued theology at the esteemed Wilberforce University before deciding to follow his passion for art.
+    </p>
+    <p>
+      One of Tanner’s most celebrated works, <em>The Banjo Lesson</em> (1893), is an intimate portrayal of a Black elder teaching a child to play the banjo. The painting is often interpreted as a symbol of cultural transmission, highlighting the importance of tradition and familial bonds. It became one of his signature pieces, resonating with viewers due to its tender rendering of Black subjects in a positive light, which was a rare depiction at the time.
+    </p>
+    <p>
+      Tanner’s portfolio includes numerous other important works, including <em>The Resurrection of Lazarus</em> (1896) and <em>Annunciation</em> (1898), which reflect his deep interest in biblical themes. His use of light and shadow was groundbreaking, creating an ethereal quality that conveyed the divine presence. Tanner’s works often exude a sense of peace and spirituality, offering a dignified portrayal of his subjects, many of whom were marginalized in both art and society.
+    </p>
+    <p>
+      Throughout his career, Tanner received international recognition and numerous awards. He became the first African American artist to be represented in the collection of the Louvre Museum in Paris. Despite facing racial discrimination in the United States, Tanner's influence extended far beyond his time, paving the way for future generations of Black artists who sought to challenge racial stereotypes and bring authenticity to their portrayals of Black life. Today, Tanner is celebrated not only for his artistic accomplishments but also for his role in breaking racial barriers in the art world.
+    </p>
+  </section>
+  
+
+  <section class="gallery" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div id="masonry-grid" class="masonry-grid">
+        <a href="/artists/tanner/image1.png" data-lightbox="tanner-gallery" data-title="Tanner Art 1">
+            <div class="grid-item"><img src="/artists/tanner/image1.png" alt="Tanner Art 1"></div>
+          </a>
+          <a href="/artists/tanner/image2.png" data-lightbox="tanner-gallery" data-title="Tanner Art 2">
+            <div class="grid-item"><img src="/artists/tanner/image2.png" alt="Tanner Art 2"></div>
+          </a>
+          <a href="/artists/tanner/image3.png" data-lightbox="tanner-gallery" data-title="Tanner Art 3">
+            <div class="grid-item"><img src="/artists/tanner/image3.png" alt="Tanner Art 3"></div>
+          </a>
+          <a href="/artists/tanner/image4.png" data-lightbox="tanner-gallery" data-title="Tanner Art 4">
+            <div class="grid-item"><img src="/artists/tanner/image4.png" alt="Tanner Art 4"></div>
+          </a>
+          <a href="/artists/tanner/image5.png" data-lightbox="tanner-gallery" data-title="Tanner Art 5">
+            <div class="grid-item"><img src="/artists/tanner/image5.png" alt="Tanner Art 5"></div>
+          </a>
+          <a href="/artists/tanner/image6.png" data-lightbox="tanner-gallery" data-title="Tanner Art 6">
+            <div class="grid-item"><img src="/artists/tanner/image6.png" alt="Tanner Art 6"></div>
+          </a>
+          <a href="/artists/tanner/image7.png" data-lightbox="tanner-gallery" data-title="Tanner Art 7">
+            <div class="grid-item"><img src="/artists/tanner/image7.png" alt="Tanner Art 7"></div>
+          </a>
+          <a href="/artists/tanner/image8.png" data-lightbox="tanner-gallery" data-title="Tanner Art 8">
+            <div class="grid-item"><img src="/artists/tanner/image8.png" alt="Tanner Art 8"></div>
+          </a>
+          <a href="/artists/tanner/image9.png" data-lightbox="tanner-gallery" data-title="Tanner Art 9">
+            <div class="grid-item"><img src="/artists/tanner/image9.png" alt="Tanner Art 9"></div>
+          </a>
+          <a href="/artists/tanner/image10.png" data-lightbox="tanner-gallery" data-title="Tanner Art 10">
+            <div class="grid-item"><img src="/artists/tanner/image10.png" alt="Tanner Art 10"></div>
+          </a>
+          
+    </div>
+  </section>
+  
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/artist-scripts.js"></script>
+</body>
+</html>

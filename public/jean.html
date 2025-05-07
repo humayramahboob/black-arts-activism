@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean-Michel Basquiat</title>
+  <link rel="stylesheet" href="/css/artist.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+
+<section class="artist-section" data-aos="fade-up">
+  <h1>Jean-Michel Basquiat</h1>
+  <p>
+    Jean-Michel Basquiat (1960–1988) was a groundbreaking African American artist known for his raw, expressive works that combined graffiti, abstraction, and symbolic imagery. Emerging from the New York City street art scene, Basquiat’s work explored themes of identity, race, and power, blending text, symbols, and vibrant colors.
+  </p>
+
+  <div class="masonry" id="gallery">
+    <div class="item"><img src="/images/basquiat/art1.jpg" alt="Basquiat Artwork 1"></div>
+    <div class="item"><img src="/images/basquiat/art2.jpg" alt="Basquiat Artwork 2"></div>
+    <div class="item"><img src="/images/basquiat/art3.jpg" alt="Basquiat Artwork 3"></div>
+    <div class="item"><img src="/images/basquiat/art4.jpg" alt="Basquiat Artwork 4"></div>
+    <div class="item"><img src="/images/basquiat/art5.jpg" alt="Basquiat Artwork 5"></div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+
+    var elem = document.querySelector('.masonry');
+    new Masonry(elem, {
+      itemSelector: '.item',
+      columnWidth: '.item',
+      fitWidth: true,
+      gutter: 10
+    });
+  });
+</script>
+
+</body>
+</html>

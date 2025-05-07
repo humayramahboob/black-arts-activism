@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faith Ringgold - Black Arts & Activism</title>
+  <link rel="stylesheet" href="/css/artist.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<section class="artist-section">
+  <h2 data-aos="fade-up">Faith Ringgold: Storytelling Through Quilts</h2>
+  <p data-aos="fade-up">Faith Ringgold (b. 1930) is an African American artist, writer, and activist best known for her vibrant story quilts that combine painting, fabric, and narrative. Her works address themes of race, gender, and social justice, offering powerful reflections on the Black experience in America.</p>
+
+  <div class="gallery" data-masonry='{"itemSelector": ".gallery-item", "columnWidth": 200}'>
+    <div class="gallery-item"><img src="/images/faith-ringgold1.jpg" alt="Faith Ringgold Art 1"></div>
+    <div class="gallery-item"><img src="/images/faith-ringgold2.jpg" alt="Faith Ringgold Art 2"></div>
+    <div class="gallery-item"><img src="/images/faith-ringgold3.jpg" alt="Faith Ringgold Art 3"></div>
+    <div class="gallery-item"><img src="/images/faith-ringgold4.jpg" alt="Faith Ringgold Art 4"></div>
+  </div>
+</section>
+
+<script>
+  AOS.init();
+  document.addEventListener("DOMContentLoaded", function() {
+    new Masonry('.gallery', {
+      itemSelector: '.gallery-item',
+      columnWidth: 200,
+      gutter: 10
+    });
+  });
+</script>
+
+</body>
+</html>

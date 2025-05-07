@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kara Walker - Black Arts & Activism</title>
+  <link rel="stylesheet" href="/css/artist.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<section class="artist-section">
+  <h2 data-aos="fade-up">Kara Walker: Shadows of History</h2>
+  <p data-aos="fade-up">Kara Walker (b. 1969) is a contemporary African American artist known for her provocative and haunting silhouettes that explore themes of race, identity, gender, and violence. Her powerful installations confront the brutal history of American slavery and challenge viewers to reflect on its ongoing impact.</p>
+
+  <div class="gallery" data-masonry='{"itemSelector": ".gallery-item", "columnWidth": 200}'>
+    <div class="gallery-item"><img src="/images/kara-walker1.jpg" alt="Kara Walker Art 1"></div>
+    <div class="gallery-item"><img src="/images/kara-walker2.jpg" alt="Kara Walker Art 2"></div>
+    <div class="gallery-item"><img src="/images/kara-walker3.jpg" alt="Kara Walker Art 3"></div>
+    <div class="gallery-item"><img src="/images/kara-walker4.jpg" alt="Kara Walker Art 4"></div>
+  </div>
+</section>
+
+<script>
+  AOS.init();
+  document.addEventListener("DOMContentLoaded", function() {
+    new Masonry('.gallery', {
+      itemSelector: '.gallery-item',
+      columnWidth: 200,
+      gutter: 10
+    });
+  });
+</script>
+
+</body>
+</html>
