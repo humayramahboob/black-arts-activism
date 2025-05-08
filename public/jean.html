@@ -9,36 +9,71 @@
 </head>
 <body>
 
-<section class="artist-section" data-aos="fade-up">
+<section class="artist" data-aos="fade-up">
   <h1>Jean-Michel Basquiat</h1>
-  <p>
-    Jean-Michel Basquiat (1960–1988) was a groundbreaking African American artist known for his raw, expressive works that combined graffiti, abstraction, and symbolic imagery. Emerging from the New York City street art scene, Basquiat’s work explored themes of identity, race, and power, blending text, symbols, and vibrant colors.
-  </p>
+<p>
+  Jean-Michel Basquiat (1960–1988) was a groundbreaking African American artist known for his vibrant, expressive paintings that combined text, symbols, and abstract imagery to explore themes of identity, race, power, and history. Born in Brooklyn, New York, to a Haitian father and Puerto Rican mother, Basquiat’s multicultural background greatly influenced his artistic style and subject matter.
+</p>
+<p>
+  Basquiat began his career as a street artist under the pseudonym "SAMO," creating graffiti with cryptic messages throughout New York City. His work quickly gained attention for its raw energy and social commentary, leading him to transition from street art to the fine art world. By the early 1980s, Basquiat became a central figure in the New York art scene, collaborating with artists like Andy Warhol.
+</p>
+<p>
+  Some of Basquiat’s most iconic works include <em>Untitled (1981)</em>, <em>Hollywood Africans</em> (1983), and <em>Skull</em> (1981). His distinctive style featured bold colors, dynamic lines, and recurring motifs such as crowns, skeletal figures, and text fragments, which reflected his interest in African American culture, history, and the struggles of marginalized communities.
+</p>
+<p>
+  Despite his meteoric rise to fame, Basquiat’s life was marked by personal struggles, including addiction, which ultimately led to his untimely death at the age of 27. However, his artistic legacy has only grown over time, with his works becoming highly sought after and widely exhibited in major museums worldwide. Today, Jean-Michel Basquiat is celebrated as one of the most influential artists of the 20th century, whose work continues to inspire conversations about race, identity, and artistic expression.
+</p>
+  </section>
 
-  <div class="masonry" id="gallery">
-    <div class="item"><img src="/images/basquiat/art1.jpg" alt="Basquiat Artwork 1"></div>
-    <div class="item"><img src="/images/basquiat/art2.jpg" alt="Basquiat Artwork 2"></div>
-    <div class="item"><img src="/images/basquiat/art3.jpg" alt="Basquiat Artwork 3"></div>
-    <div class="item"><img src="/images/basquiat/art4.jpg" alt="Basquiat Artwork 4"></div>
-    <div class="item"><img src="/images/basquiat/art5.jpg" alt="Basquiat Artwork 5"></div>
-  </div>
-</section>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init();
-
-    var elem = document.querySelector('.masonry');
-    new Masonry(elem, {
-      itemSelector: '.item',
-      columnWidth: '.item',
-      fitWidth: true,
-      gutter: 10
-    });
-  });
-</script>
-
-</body>
-</html>
+  <section class="gallery" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div id="masonry-grid" class="masonry-grid">
+        <a href="/artists/jean/image1.png" data-lightbox="tanner-gallery" data-title="Tanner Art 1">
+            <div class="grid-item"><img src="/artists/jean/image1.png" alt="Tanner Art 1"></div>
+          </a>
+          <a href="/artists/jean/image2.png" data-lightbox="tanner-gallery" data-title="Tanner Art 2">
+            <div class="grid-item"><img src="/artists/jean/image2.png" alt="Tanner Art 2"></div>
+          </a>
+          <a href="/artists/jean/image3.png" data-lightbox="tanner-gallery" data-title="Tanner Art 3">
+            <div class="grid-item"><img src="/artists/jean/image3.png" alt="Tanner Art 3"></div>
+          </a>
+          <a href="/artists/jean/image4.png" data-lightbox="tanner-gallery" data-title="Tanner Art 4">
+            <div class="grid-item"><img src="/artists/jean/image4.png" alt="Tanner Art 4"></div>
+          </a>
+          <a href="/artists/jean/image5.png" data-lightbox="tanner-gallery" data-title="Tanner Art 5">
+            <div class="grid-item"><img src="/artists/jean/image5.png" alt="Tanner Art 5"></div>
+          </a>
+          <a href="/artists/jean/image6.png" data-lightbox="tanner-gallery" data-title="Tanner Art 6">
+            <div class="grid-item"><img src="/artists/jean/image6.png" alt="Tanner Art 6"></div>
+          </a>
+          <a href="/artists/jean/image7.png" data-lightbox="tanner-gallery" data-title="Tanner Art 7">
+            <div class="grid-item"><img src="/artists/jean/image7.png" alt="Tanner Art 7"></div>
+          </a>
+          <a href="/artists/jean/image8.png" data-lightbox="tanner-gallery" data-title="Tanner Art 8">
+            <div class="grid-item"><img src="/artists/jean/image8.png" alt="Tanner Art 8"></div>
+          </a>
+          <a href="/artists/jean/image9.png" data-lightbox="tanner-gallery" data-title="Tanner Art 9">
+            <div class="grid-item"><img src="/artists/jean/image9.png" alt="Tanner Art 9"></div>
+          </a>
+          <a href="/artists/jean/image10.png" data-lightbox="tanner-gallery" data-title="Tanner Art 10">
+            <div class="grid-item"><img src="/artists/jean/image10.png" alt="Tanner Art 10"></div>
+          </a>
+    </div>
+  </section>
+  
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/artist-scripts.js"></script>
+  
+  </body>
+  </html>

@@ -5,33 +5,71 @@
   <title>Augusta Savage - Black Arts & Activism</title>
   <link rel="stylesheet" href="/css/artist.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
 
-<section class="artist-section">
-  <h2 data-aos="fade-up">Augusta Savage: Sculpting Empowerment</h2>
-  <p data-aos="fade-up">Augusta Savage (1892–1962) was a pioneering African American sculptor, educator, and activist during the Harlem Renaissance. Known for her realistic and expressive sculptures, she used her art to promote Black identity and talent, creating works that celebrated Black heritage and community. Savage also founded the Savage Studio of Arts and Crafts, where she mentored young Black artists.</p>
+  <section class="artist" data-aos="fade-up">
+    <h1>Augusta Savage</h1>
+    <p>
+      Augusta Savage (1892–1962) was a pioneering African American sculptor, educator, and activist whose work and advocacy were instrumental in the Harlem Renaissance. Born in Green Cove Springs, Florida, Savage showed an early talent for sculpting, using natural clay to create her first figures. Despite facing racial and financial obstacles, she pursued her passion, eventually studying at Cooper Union in New York City.
+    </p>
+    <p>
+      Savage is best known for her powerful sculptures that celebrated Black culture and human dignity. Her most famous work, <em>Lift Every Voice and Sing (The Harp)</em> (1939), was a monumental sculpture created for the 1939 New York World’s Fair, symbolizing the musical heritage of African Americans. Although the sculpture was destroyed after the fair, it remains an iconic representation of her artistic vision.
+    </p>
+    <p>
+      In addition to her own work, Savage was a dedicated educator and mentor to numerous young artists, founding the Savage Studio of Arts and Crafts in Harlem. She taught and inspired a generation of African American artists, including Jacob Lawrence, Norman Lewis, and Gwendolyn Knight, helping to cultivate a vibrant Black artistic community.
+    </p>
+  </section>
 
-  <div class="gallery" data-masonry='{"itemSelector": ".gallery-item", "columnWidth": 200}'>
-    <div class="gallery-item"><img src="/images/augusta-savage1.jpg" alt="Augusta Savage Art 1"></div>
-    <div class="gallery-item"><img src="/images/augusta-savage2.jpg" alt="Augusta Savage Art 2"></div>
-    <div class="gallery-item"><img src="/images/augusta-savage3.jpg" alt="Augusta Savage Art 3"></div>
-    <div class="gallery-item"><img src="/images/augusta-savage4.jpg" alt="Augusta Savage Art 4"></div>
-  </div>
-</section>
-
-<script>
-  AOS.init();
-  document.addEventListener("DOMContentLoaded", function() {
-    new Masonry('.gallery', {
-      itemSelector: '.gallery-item',
-      columnWidth: 200,
-      gutter: 10
-    });
-  });
-</script>
-
-</body>
-</html>
+  <section class="gallery" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div id="masonry-grid" class="masonry-grid">
+        <a href="/artists/augusta/image1.png" data-lightbox="tanner-gallery" data-title="Tanner Art 1">
+            <div class="grid-item"><img src="/artists/augusta/image1.png" alt="Tanner Art 1"></div>
+          </a>
+          <a href="/artists/augusta/image2.png" data-lightbox="tanner-gallery" data-title="Tanner Art 2">
+            <div class="grid-item"><img src="/artists/augusta/image2.png" alt="Tanner Art 2"></div>
+          </a>
+          <a href="/artists/augusta/image3.png" data-lightbox="tanner-gallery" data-title="Tanner Art 3">
+            <div class="grid-item"><img src="/artists/augusta/image3.png" alt="Tanner Art 3"></div>
+          </a>
+          <a href="/artists/augusta/image4.png" data-lightbox="tanner-gallery" data-title="Tanner Art 4">
+            <div class="grid-item"><img src="/artists/augusta/image4.png" alt="Tanner Art 4"></div>
+          </a>
+          <a href="/artists/augusta/image5.png" data-lightbox="tanner-gallery" data-title="Tanner Art 5">
+            <div class="grid-item"><img src="/artists/augusta/image5.png" alt="Tanner Art 5"></div>
+          </a>
+          <a href="/artists/augusta/image6.png" data-lightbox="tanner-gallery" data-title="Tanner Art 6">
+            <div class="grid-item"><img src="/artists/augusta/image6.png" alt="Tanner Art 6"></div>
+          </a>
+          <a href="/artists/augusta/image7.png" data-lightbox="tanner-gallery" data-title="Tanner Art 7">
+            <div class="grid-item"><img src="/artists/augusta/image7.png" alt="Tanner Art 7"></div>
+          </a>
+          <a href="/artists/augusta/image8.png" data-lightbox="tanner-gallery" data-title="Tanner Art 8">
+            <div class="grid-item"><img src="/artists/augusta/image8.png" alt="Tanner Art 8"></div>
+          </a>
+          <a href="/artists/augusta/image9.png" data-lightbox="tanner-gallery" data-title="Tanner Art 9">
+            <div class="grid-item"><img src="/artists/augusta/image9.png" alt="Tanner Art 9"></div>
+          </a>
+          <a href="/artists/augusta/image10.png" data-lightbox="tanner-gallery" data-title="Tanner Art 10">
+            <div class="grid-item"><img src="/artists/augusta/image10.png" alt="Tanner Art 10"></div>
+          </a>
+    </div>
+  </section>
+  
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/artist-scripts.js"></script>
+  
+  </body>
+  </html>

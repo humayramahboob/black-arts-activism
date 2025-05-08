@@ -5,33 +5,73 @@
   <title>Kara Walker - Black Arts & Activism</title>
   <link rel="stylesheet" href="/css/artist.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
 
-<section class="artist-section">
-  <h2 data-aos="fade-up">Kara Walker: Shadows of History</h2>
-  <p data-aos="fade-up">Kara Walker (b. 1969) is a contemporary African American artist known for her provocative and haunting silhouettes that explore themes of race, identity, gender, and violence. Her powerful installations confront the brutal history of American slavery and challenge viewers to reflect on its ongoing impact.</p>
+  <section class="artist" data-aos="fade-up">
+    <h1>Kara Walker</h1>
+    <p>
+      Kara Walker (b. 1969) is an influential African American artist known for her provocative works that explore themes of race, gender, sexuality, and violence through stark, large-scale silhouettes. Born in Stockton, California, and raised in the southern United States, Walker’s work is deeply influenced by the history of American slavery and the complex narratives surrounding race relations.
+    </p>
+    <p>
+      Walker’s portfolio includes a wide range of media, from drawings and prints to sculptures and monumental installations. Notable works such as <em>A Subtlety</em> (2014), a massive sugar-coated sculpture of a sphinx-like figure, further demonstrate her ability to address historical trauma and the legacy of racial exploitation in America with a striking, symbolic approach.
+    </p>
+    <p>
+      Throughout her career, Walker has received numerous prestigious awards, including a MacArthur Fellowship ("Genius Grant") in 1997, solidifying her status as a groundbreaking voice in contemporary art. Her works are included in major museum collections worldwide, including the Museum of Modern Art (MoMA) and the Tate Modern. Kara Walker continues to challenge viewers to confront uncomfortable histories and consider their ongoing impact on American society.
+    </p>
+    </section>
 
-  <div class="gallery" data-masonry='{"itemSelector": ".gallery-item", "columnWidth": 200}'>
-    <div class="gallery-item"><img src="/images/kara-walker1.jpg" alt="Kara Walker Art 1"></div>
-    <div class="gallery-item"><img src="/images/kara-walker2.jpg" alt="Kara Walker Art 2"></div>
-    <div class="gallery-item"><img src="/images/kara-walker3.jpg" alt="Kara Walker Art 3"></div>
-    <div class="gallery-item"><img src="/images/kara-walker4.jpg" alt="Kara Walker Art 4"></div>
-  </div>
-</section>
-
-<script>
-  AOS.init();
-  document.addEventListener("DOMContentLoaded", function() {
-    new Masonry('.gallery', {
-      itemSelector: '.gallery-item',
-      columnWidth: 200,
-      gutter: 10
-    });
-  });
-</script>
-
-</body>
-</html>
+  <section class="gallery" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div id="masonry-grid" class="masonry-grid">
+        <a href="/artists/kara/image1.png" data-lightbox="tanner-gallery" data-title="Tanner Art 1">
+            <div class="grid-item"><img src="/artists/kara/image1.png" alt="Tanner Art 1"></div>
+          </a>
+          <a href="/artists/kara/image2.png" data-lightbox="tanner-gallery" data-title="Tanner Art 2">
+            <div class="grid-item"><img src="/artists/kara/image2.png" alt="Tanner Art 2"></div>
+          </a>
+          <a href="/artists/kara/image3.png" data-lightbox="tanner-gallery" data-title="Tanner Art 3">
+            <div class="grid-item"><img src="/artists/kara/image3.png" alt="Tanner Art 3"></div>
+          </a>
+          <a href="/artists/kara/image4.png" data-lightbox="tanner-gallery" data-title="Tanner Art 4">
+            <div class="grid-item"><img src="/artists/kara/image4.png" alt="Tanner Art 4"></div>
+          </a>
+          <a href="/artists/kara/image5.png" data-lightbox="tanner-gallery" data-title="Tanner Art 5">
+            <div class="grid-item"><img src="/artists/kara/image5.png" alt="Tanner Art 5"></div>
+          </a>
+          <a href="/artists/kara/image6.png" data-lightbox="tanner-gallery" data-title="Tanner Art 6">
+            <div class="grid-item"><img src="/artists/kara/image6.png" alt="Tanner Art 6"></div>
+          </a>
+          <a href="/artists/kara/image7.png" data-lightbox="tanner-gallery" data-title="Tanner Art 7">
+            <div class="grid-item"><img src="/artists/kara/image7.png" alt="Tanner Art 7"></div>
+          </a>
+          <a href="/artists/kara/image8.png" data-lightbox="tanner-gallery" data-title="Tanner Art 8">
+            <div class="grid-item"><img src="/artists/kara/image8.png" alt="Tanner Art 8"></div>
+          </a>
+          <a href="/artists/kara/image9.png" data-lightbox="tanner-gallery" data-title="Tanner Art 9">
+            <div class="grid-item"><img src="/artists/kara/image9.png" alt="Tanner Art 9"></div>
+          </a>
+          <a href="/artists/kara/image10.png" data-lightbox="tanner-gallery" data-title="Tanner Art 10">
+            <div class="grid-item"><img src="/artists/kara/image10.png" alt="Tanner Art 10"></div>
+          </a>
+          
+    </div>
+  </section>
+  
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/artist-scripts.js"></script>
+  
+  </body>
+  </html>
+  

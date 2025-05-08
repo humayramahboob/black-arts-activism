@@ -5,33 +5,73 @@
   <title>Faith Ringgold - Black Arts & Activism</title>
   <link rel="stylesheet" href="/css/artist.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
 
-<section class="artist-section">
-  <h2 data-aos="fade-up">Faith Ringgold: Storytelling Through Quilts</h2>
-  <p data-aos="fade-up">Faith Ringgold (b. 1930) is an African American artist, writer, and activist best known for her vibrant story quilts that combine painting, fabric, and narrative. Her works address themes of race, gender, and social justice, offering powerful reflections on the Black experience in America.</p>
+  <section class="artist" data-aos="fade-up">
+  <h1>Faith Ringgold</h1>
+  <p>
+  Faith Ringgold (b. 1930) is a renowned African American artist, author, and activist known for her vibrant story quilts, which blend narrative storytelling with fine art. Born in Harlem, New York City, Ringgold grew up during the Harlem Renaissance, a period that greatly influenced her artistic vision. She initially studied painting but eventually developed a unique style that combined fabric, paint, and storytelling, challenging conventional artistic norms.
+  </p>
+  <p>
+  Ringgold’s artistic portfolio extends beyond quilts, including paintings, sculptures, and illustrated children’s books, such as <em>Tar Beach</em> (1991), which won numerous awards and introduced her storytelling to a broader audience. Her work is celebrated for its bold colors, dynamic compositions, and its ability to convey complex social messages through accessible visual narratives.
+  </p>
+  <p>
+  Over the course of her career, Ringgold has received numerous awards and honors, including a National Endowment for the Arts fellowship and the Guggenheim Fellowship. Her works are part of major museum collections, including the Museum of Modern Art (MoMA) and the Guggenheim Museum in New York City. As an outspoken advocate for racial and gender equality in the art world, Faith Ringgold continues to inspire generations of artists who seek to use their creative voices for social change.
+  </p>
+  </section>
 
-  <div class="gallery" data-masonry='{"itemSelector": ".gallery-item", "columnWidth": 200}'>
-    <div class="gallery-item"><img src="/images/faith-ringgold1.jpg" alt="Faith Ringgold Art 1"></div>
-    <div class="gallery-item"><img src="/images/faith-ringgold2.jpg" alt="Faith Ringgold Art 2"></div>
-    <div class="gallery-item"><img src="/images/faith-ringgold3.jpg" alt="Faith Ringgold Art 3"></div>
-    <div class="gallery-item"><img src="/images/faith-ringgold4.jpg" alt="Faith Ringgold Art 4"></div>
+<section class="gallery" data-aos="fade-up">
+  <h2>Gallery</h2>
+  <div id="masonry-grid" class="masonry-grid">
+      <a href="/artists/faith/image1.png" data-lightbox="tanner-gallery" data-title="Tanner Art 1">
+          <div class="grid-item"><img src="/artists/faith/image1.png" alt="Tanner Art 1"></div>
+        </a>
+        <a href="/artists/faith/image2.png" data-lightbox="tanner-gallery" data-title="Tanner Art 2">
+          <div class="grid-item"><img src="/artists/faith/image2.png" alt="Tanner Art 2"></div>
+        </a>
+        <a href="/artists/faith/image3.png" data-lightbox="tanner-gallery" data-title="Tanner Art 3">
+          <div class="grid-item"><img src="/artists/faith/image3.png" alt="Tanner Art 3"></div>
+        </a>
+        <a href="/artists/faith/image4.png" data-lightbox="tanner-gallery" data-title="Tanner Art 4">
+          <div class="grid-item"><img src="/artists/faith/image4.png" alt="Tanner Art 4"></div>
+        </a>
+        <a href="/artists/faith/image5.png" data-lightbox="tanner-gallery" data-title="Tanner Art 5">
+          <div class="grid-item"><img src="/artists/faith/image5.png" alt="Tanner Art 5"></div>
+        </a>
+        <a href="/artists/faith/image6.png" data-lightbox="tanner-gallery" data-title="Tanner Art 6">
+          <div class="grid-item"><img src="/artists/faith/image6.png" alt="Tanner Art 6"></div>
+        </a>
+        <a href="/artists/faith/image7.png" data-lightbox="tanner-gallery" data-title="Tanner Art 7">
+          <div class="grid-item"><img src="/artists/faith/image7.png" alt="Tanner Art 7"></div>
+        </a>
+        <a href="/artists/faith/image8.png" data-lightbox="tanner-gallery" data-title="Tanner Art 8">
+          <div class="grid-item"><img src="/artists/faith/image8.png" alt="Tanner Art 8"></div>
+        </a>
+        <a href="/artists/faith/image9.png" data-lightbox="tanner-gallery" data-title="Tanner Art 9">
+          <div class="grid-item"><img src="/artists/faith/image9.png" alt="Tanner Art 9"></div>
+        </a>
+        <a href="/artists/faith/image10.png" data-lightbox="tanner-gallery" data-title="Tanner Art 10">
+          <div class="grid-item"><img src="/artists/faith/image10.png" alt="Tanner Art 10"></div>
+        </a>
+        
   </div>
 </section>
 
+
+<div id="footer-container"></div>
 <script>
-  AOS.init();
-  document.addEventListener("DOMContentLoaded", function() {
-    new Masonry('.gallery', {
-      itemSelector: '.gallery-item',
-      columnWidth: 200,
-      gutter: 10
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
     });
-  });
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/js/artist-scripts.js"></script>
 
 </body>
 </html>
