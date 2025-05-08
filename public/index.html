@@ -18,8 +18,9 @@
   </section>
 
   <section class="intro-text">
-    <p><em>“ You can’t sit around and wait for somebody to say who you are. You need to write it and paint it and do it.” - Faith Ringgold</em></p>
-
+    <p>
+      <em id="typewriter-text">“ You can’t sit around and wait for somebody to say who you are. You need to write it and paint it and do it.” - Faith Ringgold</em>
+    </p>
     <p>
       Black Art has long been a powerful tool for resistance, empowerment, and storytelling in the face of injustice. 
       This website explores how artistic expression has been deeply woven into the fight for Black liberation—from 
@@ -75,7 +76,6 @@
       <div class="swiper-pagination"></div>
     </div>
   </section>
-  
 
   <hr class="sources-divider">
   <ul class="sources-list">
@@ -95,7 +95,26 @@
       document.getElementById('footer-container').innerHTML = data;
     });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const typewriter = new Typewriter('#typewriter-text', {
+      loop: true,
+      delay: 50, // Typing speed
+      deleteSpeed: 25, // Deletion speed
+      cursor: '|'
+    });
+
+    typewriter
+      .typeString('“ You can’t sit around and wait for somebody to say who you are. You need to write it and paint it and do it.” - Faith Ringgold')
+      .pauseFor(2000)
+      .start();
+  });
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 <script src="js/slideshow.js" defer></script>
 
 </body>
