@@ -1,4 +1,4 @@
-# Black Arts & Activism
+# 🎨 Black Arts & Activism
 
 ## 🌐 About this project
 For my final project, I created a visually engaging and academically informative website exploring Black Art and its role in activism. This project examines the historical and cultural significance of Black artistic expression, focusing on how art has fueled social movements and revolutionary change within the Black community. The site also highlights influential Black artists and explores the meaning behind their work.
@@ -10,12 +10,12 @@ A key text incorporated into this project is Assata by Assata Shakur. Through th
 - HTML
 - CSS
 - Node.js
-- Express
-- Lightbox.js
-- Masonry.js
-- Swiper.js
-- AOS
-- Typewriter.js
+- Express⚡
+- Lightbox.js 💡
+- Masonry.js 🧱
+- Swiper.js 🌊
+- AOS 🎢
+- Typewriter.js ⌨️
 
 ## 🚀 Running It
 ```
